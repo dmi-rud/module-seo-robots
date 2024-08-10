@@ -38,7 +38,7 @@ class OverrideMetaRobotsContent
     public function beforeRenderMetadata(Renderer $subject): void
     {
         foreach ($this->getRobotsOverrideRules() as $urlPath => $content) {
-            if (str_starts_with($this->request->getPathInfo(), $urlPath)) {
+            if (str_starts_with($this->request->getOriginalPathInfo(), $urlPath)) {
                 $this->pageConfig->setMetadata('robots', $content);
                 break;
             }
@@ -58,7 +58,7 @@ class OverrideMetaRobotsContent
             foreach ($this->serializer->unserialize($value) as $rule) {
                 $result[$rule['url_path']] = $rule['content'];
             }
-        } catch (\InvalidArgumentException $e) {
+        } catch (\InvalidArgumentException) {
         }
 
         return $result;
