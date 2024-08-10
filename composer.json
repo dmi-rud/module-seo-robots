@@ -1,0 +1,22 @@
+{
+  "name": "dmi-rud/module-seo-robots",
+  "version": "0.1.0",
+  "description": "",
+  "type": "magento2-module",
+  "require": {
+    "php": "~8.1.0",
+    "magento/framework": "^103.0.0"
+  },
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "DmiRud\\SeoRobots\\": ""
+    }
+  }
+}
