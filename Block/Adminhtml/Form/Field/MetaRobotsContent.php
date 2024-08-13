@@ -31,7 +31,7 @@ class MetaRobotsContent extends Select
      *
      * @return string
      */
-    public function _toHtml()
+    public function _toHtml(): string
     {
         if (!$this->getOptions()) {
 

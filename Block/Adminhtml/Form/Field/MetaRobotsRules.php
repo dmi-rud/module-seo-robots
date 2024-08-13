@@ -6,7 +6,6 @@ namespace DmiRud\SeoRobots\Block\Adminhtml\Form\Field;
 use Magento\Config\Block\System\Config\Form\Field\FieldArray\AbstractFieldArray;
 use Magento\Framework\View\Element\AbstractBlock;
 use Magento\Framework\View\Element\BlockInterface;
-use Magento\Framework\View\Element\Html\Select;
 use Magento\Framework\DataObject;
 use Magento\Framework\Exception\LocalizedException;
 
@@ -70,7 +69,7 @@ class MetaRobotsRules extends AbstractFieldArray
      * @return AbstractBlock
      * @throws LocalizedException
      */
-    protected function getRenderer(string $class): AbstractBlock
+    protected function getRenderer(string $class): BlockInterface
     {
         if (!array_key_exists($class, $this->renderers)) {
             $this->renderers[$class] = $this->getLayout()->createBlock(

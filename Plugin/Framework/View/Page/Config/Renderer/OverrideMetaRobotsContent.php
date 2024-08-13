@@ -9,14 +9,42 @@ use Magento\Framework\Serialize\SerializerInterface;
 use Magento\Framework\View\Page\Config;
 use Magento\Framework\View\Page\Config\Renderer;
 
+/**
+ * Overrides robots meta tag content's value
+ */
 class OverrideMetaRobotsContent
 {
+    /**
+     * config path
+     */
     private const XML_PATH_OVERRIDE_RULES = 'dmirud_seo/meta/robots_meta_override';
+
+    /**
+     * @var Config $pageConfig
+     */
     private Config $pageConfig;
+
+    /**
+     * @var Http $request
+     */
     private Http $request;
+
+    /**
+     * @var SerializerInterface $serializer
+     */
     private SerializerInterface $serializer;
+
+    /**
+     * @var ScopeConfigInterface $scopeConfig
+     */
     private ScopeConfigInterface $scopeConfig;
 
+    /**
+     * @param Config $pageConfig
+     * @param Http $request
+     * @param SerializerInterface $serializer
+     * @param ScopeConfigInterface $scopeConfig
+     */
     public function __construct(
         Config               $pageConfig,
         Http                 $request,
