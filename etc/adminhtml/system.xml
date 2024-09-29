@@ -6,9 +6,9 @@
             <group id="seo">
                 <field id="robots_meta_override" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Robots Meta Override</label>
-                    <frontend_model>\DmiRud\SeoRobots\Block\Adminhtml\Form\Field\MetaRobotsRules</frontend_model>
+                    <frontend_model>RadWorks\SeoRobots\Block\Adminhtml\Form\Field\MetaRobotsRules</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                    <config_path>dmirud_seo/meta/robots_meta_override</config_path>
+                    <config_path>radworks_seo/meta/robots_meta_override</config_path>
                 </field>
             </group>
         </section>

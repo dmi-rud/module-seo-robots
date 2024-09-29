@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DmiRud\SeoRobots\Block\Adminhtml\Form\Field;
+namespace RadWorks\SeoRobots\Block\Adminhtml\Form\Field;
 
 use Magento\Framework\View\Element\Html\Select;
 

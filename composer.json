@@ -1,5 +1,5 @@
 {
-  "name": "dmi-rud/module-seo-robots",
+  "name": "rad-works/module-seo-robots",
   "version": "0.2.1",
   "description": "",
   "type": "magento2-module",
@@ -16,7 +16,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "DmiRud\\SeoRobots\\": ""
+      "RadWorks\\SeoRobots\\": ""
     }
   }
 }

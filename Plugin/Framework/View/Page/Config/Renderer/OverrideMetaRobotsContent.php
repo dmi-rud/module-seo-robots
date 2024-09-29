@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DmiRud\SeoRobots\Plugin\Framework\View\Page\Config\Renderer;
+namespace RadWorks\SeoRobots\Plugin\Framework\View\Page\Config\Renderer;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Request\Http;
@@ -17,7 +17,7 @@ class OverrideMetaRobotsContent
     /**
      * config path
      */
-    private const XML_PATH_OVERRIDE_RULES = 'dmirud_seo/meta/robots_meta_override';
+    private const XML_PATH_OVERRIDE_RULES = 'radworks_seo/meta/robots_meta_override';
 
     /**
      * @var Config $pageConfig

@@ -3,4 +3,4 @@ declare(strict_types=1);
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'DmiRud_SeoRobots', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'RadWorks_SeoRobots', __DIR__);

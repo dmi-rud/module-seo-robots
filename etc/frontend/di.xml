@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\View\Page\Config\Renderer">
-        <plugin name="DmiRud_SeoRobots::override_meta_robots_content"
-                type="DmiRud\SeoRobots\Plugin\Framework\View\Page\Config\Renderer\OverrideMetaRobotsContent"/>
+        <plugin name="RadWorks_SeoRobots::override_meta_robots_content"
+                type="RadWorks\SeoRobots\Plugin\Framework\View\Page\Config\Renderer\OverrideMetaRobotsContent"/>
     </type>
 </config>
