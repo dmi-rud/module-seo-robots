@@ -1,10 +1,10 @@
 {
   "name": "rad-works/module-seo-robots",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "type": "magento2-module",
   "require": {
-    "php": "~8.1.0",
+    "php": ">=8.1.0",
     "magento/framework": "^103.0.0"
   },
   "license": [
